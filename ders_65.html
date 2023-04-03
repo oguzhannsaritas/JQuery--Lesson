@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <style>
+        .deneme {
+            display: block;
+            height: 160px;
+            border: 2px solid lightgray;
+            color: gray;
+            padding: 5px;
+            margin: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1" class="deneme c1">
+        #div1 <br> <br>
+        .c1
+
+    </div>
+    <div id="div4" class="deneme c1">
+        #div4 <br> <br>
+        .c1
+
+    </div>
+    <div id="div2" class="deneme c2">
+        #div2 <br><br>
+        .c2
+    </div>
+    <div id="div3" class="deneme c3">
+        #div3 <br><br>
+        .c3
+    </div>
+
+
+    <br>
+    <button id="btn">Tıkla</button>
+
+
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+
+                $("div").not(".c1").css({
+
+                    "border":"2px solid green",
+                    "color":"green"
+
+
+
+
+                });
+
+            });
+
+
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

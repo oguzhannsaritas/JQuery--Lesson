@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        #div1 {
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <div id="div1" class="deneme">
+
+        <p id="p1">Paragraf 1</p>
+        <p id="p2">Paragraf 2</p>
+        <p id="p3">Paragraf 3</p>
+        <p id="p4">Paragraf 4</p>
+
+    </div>
+    <div></div>
+
+    <br><br>
+    <button onclick="yazdir()" id="btn">Tıkla</button>
+
+
+    <script>
+        function yazdir() {         // yazdir metodu ile div içindeki p değerlerinin altına yeniden ekleme yapar.  3 yeni değişken ekler. 3 farklı şekilde değşken eklemeyi gösterilmiştir.
+            var t1 = "<p> Paragraf </p>";
+            var t2 = $("<p></p>").text("P2");
+            var t3 = document.createElement("p").innerHTML = "P3"
+            var t4 = "<p> P4 </p>";
+            $("#div1").append(t1, t2, t3,t4); // append JQUERY de kıullanıcagımız bu metod ile bir div içerisine entegre edebilicegimiz alan, Yani belirtilen divin içerisinde olabilicek en son alana konumlanır
+        };
+
+
+
+        /*  $(function () {
+                $("#btn").click(function () {
+
+
+                    $(".deneme").remove();
+
+
+
+                });
+
+
+
+
+
+            });
+*/
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

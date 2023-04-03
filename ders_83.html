@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <style>
+        #dis {
+            width: 100%;
+            height: 150px;
+
+        }
+
+        .c1 {
+            width: 15%;
+            height: 150px;
+            margin-left: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            float: left;
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        #div1 {
+            width: 100%;
+            height: 500px;
+
+            background-color: gray;
+            color: white;
+            display: none;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <div id="dis">
+            <img id="img1" src="lion1.jpg" class="c1">
+            <img id="img2" src="lion2.jpg" class="c1">
+            <img id="img3" src="lion3.jpg" class="c1">
+
+        </div>
+
+        <div id="div1"></div>
+
+
+        <script>
+            $(function () {
+
+                $("#img1").mouseover(function () {
+                    $("#div1").fadeIn(1000).css("background-image", "url(lion1.jpg)");
+
+                });
+
+                $("#img1").mouseleave(function () {
+
+                    $("#div1").css("display","none");
+
+
+                });
+
+
+                $("#img2").mouseover(function () {
+                    $("#div1").fadeIn(1000).css("background-image", "url(lion2.jpg)");
+
+                });
+                $("#img2").mouseleave(function () {
+
+                    $("#div1").css("display","none");
+
+
+                });
+                $("#img3").mouseover(function () {
+                    $("#div1").fadeIn(1000).css("background-image", "url(lion3.jpg)");
+
+                });
+
+                $("#img3").mouseleave(function () {
+
+                    $("#div1").css("display","none");
+
+                });
+
+
+
+
+
+
+
+
+            });
+        </script>
+
+
+
+
+
+
+    </body>
+</body>
+
+</html>

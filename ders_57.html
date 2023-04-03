@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <body>
+
+        <p id="p1"> HTML</p>
+        <p id="p2"><b>CSS</b> </p>
+        <p id="p3"> Javascript</p>
+
+        <input id="t1" type="text" value="JQuery">
+        <br><br>
+        <a id="a1" href="ders_56.html" target="_blank">Ders_56 </a>
+
+        <br><br>
+        <button id="btn">Tıkla</button>
+
+
+        <script>
+            $(function () {
+
+                $("#btn").click(function () {
+                    $("#a1").attr({                 // attr metodu ile seçmiş olduğumuz bir html etiketinin niteliklerinden birinin değerini alabilir
+                        // veya bu niteliğe bir değer  verebliriz.
+
+
+
+                        "href": "ders_55.html",
+                        "target": "_self"
+
+
+
+                    });
+
+                });
+
+
+
+
+
+
+
+
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</body>
+
+</html>

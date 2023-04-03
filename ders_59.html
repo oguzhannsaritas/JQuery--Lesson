@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        #div1 {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #p5{
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <div id="div1" class="deneme">
+
+        <p id="p1">Paragraf 1</p>
+        <p id="p2">Paragraf 2</p>
+        <p id="p3">Paragraf 3</p>
+        <p id="p4">Paragraf 4</p>
+
+    </div>
+    <div></div>
+
+    <br><br>
+    <button id="btn">Tıkla</button>
+
+
+<script>
+
+$(function () {
+
+$("#btn").click(function () {
+
+// $("<p id= 'p5'> Yeni Paragraf </p>").replaceAll("p");
+// $("p").replaceWith("<p id= 'p5'> Yeni Paragraf </p>");
+$("#p1").clone().appendTo("#div1");
+ // Clone ile p1 id li p nin içindeki texti div1 in içine append yaparak yani en sona clone yapar.
+
+});
+
+
+
+});
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
